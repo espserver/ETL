@@ -545,6 +545,7 @@
     <doNotFailIfNoFile>Y</doNotFailIfNoFile>
     <ignoreMissingPath>Y</ignoreMissingPath>
     <defaultPathLeafToNull>Y</defaultPathLeafToNull>
+    <includeNulls>N</includeNulls>
     <rownum_field/>
     <file>
       <name>${Internal.Entry.Current.Directory}/DB_CONNECTIONS.json</name>

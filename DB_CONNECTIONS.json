@@ -5,7 +5,7 @@
     "db_vendor": {
       "mysql": [
         {
-          "db_name": "bilinguismo-db",
+          "db_name": "bilinguismo_db",
           "id_batch": "1",
           "id_project": "1",
           "id_deparment": "1",
@@ -15,7 +15,7 @@
           "mac_address": "i0b0_ac50de1"
         },
         {
-          "db_name": "bilinguismo-db-1",
+          "db_name": "bilinguismo_db_2",
           "id_batch": "1",
           "id_project": "1",
           "id_deparment": "1",

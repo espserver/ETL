@@ -443,13 +443,13 @@
   </notepads>
   <connection>
     <name>MySQL_CONNECTION</name>
-    <server>valle-db.cf8miogmp8jb.us-east-1.rds.amazonaws.com</server>
+    <server>sync.aulassteambalboa.com</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>${DB_NAME}</database>
     <port>3306</port>
-    <username>data_ricardo</username>
-    <password>Encrypted 2be98afc85983a380fd0cf924f2d3adf0</password>
+    <username>root</username>
+    <password>Encrypted 2be98afc86af38789a718ac228ec0fd90</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -542,23 +542,23 @@
 	students.created_date as fecha
 FROM
   simat simat
-JOIN students students
+LEFT JOIN students students
   ON simat.id = students.simat_id
-JOIN headquarters_has_grade_has_group_has_user hggu
+LEFT JOIN headquarters_has_grade_has_group_has_user hggu
   ON students.id = hggu.student_id
-JOIN headquarters_has_grade_has_group hgg
+LEFT JOIN headquarters_has_grade_has_group hgg
   ON hggu.headquarters_has_grade_has_group_id = hgg.id
-JOIN grades grades
+LEFT JOIN grades grades
   ON hgg.grade_id = grades.id
-JOIN `groups` grupo
+LEFT JOIN `groups` grupo
   ON grupo.id = hgg.group_id
-JOIN headquarters sede
+LEFT JOIN headquarters sede
   ON sede.id = hgg.headquarters_id
-JOIN institutions ie
+LEFT JOIN institutions ie
   ON ie.id = sede.institution_id
-JOIN towns towns
+LEFT JOIN towns towns
   ON towns.id = sede.town_id
-JOIN dtops dtops
+LEFT JOIN dtops dtops
   ON dtops.id = towns.dtop_id
 LEFT JOIN student_indicators pn
   ON pn.student_id = students.id AND pn.indicator_id = 5

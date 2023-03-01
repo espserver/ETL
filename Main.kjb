@@ -13,13 +13,13 @@
     </parameters>
   <connection>
     <name>MySQL_all_db</name>
-    <server>valle-db.cf8miogmp8jb.us-east-1.rds.amazonaws.com</server>
+    <server>sync.aulassteambalboa.com</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>all_db</database>
     <port>3306</port>
-    <username>data_ricardo</username>
-    <password>Encrypted 2be98afc85983a380fd0cf924f2d3adf0</password>
+    <username>root</username>
+    <password>Encrypted 2be98afc86af38789a718ac228ec0fd90</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
